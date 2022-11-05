@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.aceptarbutton = new System.Windows.Forms.Button();
             this.cancelarbutton = new System.Windows.Forms.Button();
-            this.usuariotextBox = new System.Windows.Forms.TextBox();
+            this.codigousuariotextBox = new System.Windows.Forms.TextBox();
             this.clavetextBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -77,12 +77,12 @@
             this.cancelarbutton.UseVisualStyleBackColor = true;
             this.cancelarbutton.Click += new System.EventHandler(this.cancelarbutton_Click);
             // 
-            // usuariotextBox
+            // codigousuariotextBox
             // 
-            this.usuariotextBox.Location = new System.Drawing.Point(98, 33);
-            this.usuariotextBox.Name = "usuariotextBox";
-            this.usuariotextBox.Size = new System.Drawing.Size(148, 23);
-            this.usuariotextBox.TabIndex = 4;
+            this.codigousuariotextBox.Location = new System.Drawing.Point(98, 33);
+            this.codigousuariotextBox.Name = "codigousuariotextBox";
+            this.codigousuariotextBox.Size = new System.Drawing.Size(148, 23);
+            this.codigousuariotextBox.TabIndex = 4;
             // 
             // clavetextBox
             // 
@@ -101,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 191);
             this.Controls.Add(this.clavetextBox);
-            this.Controls.Add(this.usuariotextBox);
+            this.Controls.Add(this.codigousuariotextBox);
             this.Controls.Add(this.cancelarbutton);
             this.Controls.Add(this.aceptarbutton);
             this.Controls.Add(this.label2);
@@ -120,7 +120,7 @@
         private Label label2;
         private Button aceptarbutton;
         private Button cancelarbutton;
-        private TextBox usuariotextBox;
+        private TextBox codigousuariotextBox;
         private TextBox clavetextBox;
         private ErrorProvider errorProvider1;
     }

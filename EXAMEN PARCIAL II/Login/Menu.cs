@@ -16,5 +16,20 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void tIPOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tipos tipos = new Tipos();
+            Hide();
+            tipos.Show();
+
+        }
+
+        private void tICKETSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tickets tickets = new Tickets();
+            Hide();
+            tickets.Show();
+        }
     }
 }

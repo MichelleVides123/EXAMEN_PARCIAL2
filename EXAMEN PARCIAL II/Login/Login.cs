@@ -11,10 +11,10 @@ namespace Login
 
         private async void aceptarbutton_Click(object sender, EventArgs e)
         {
-            if (usuariotextBox.Text == String.Empty)
+            if (codigousuariotextBox.Text == String.Empty)
             {
-                errorProvider1.SetError(usuariotextBox, "Ingrese un codigo de usuario");
-                usuariotextBox.Focus();
+                errorProvider1.SetError(codigousuariotextBox, "Ingrese un codigo de usuario");
+                codigousuariotextBox.Focus();
                 return;
             }
             errorProvider1.Clear();
@@ -27,7 +27,7 @@ namespace Login
             errorProvider1.Clear();
 
             UsuarioDatos userDatos = new UsuarioDatos();
-            bool valido = await userDatos.LoginAsync(usuariotextBox.Text, clavetextBox.Text);
+            bool valido = await userDatos.LoginAsync(codigousuariotextBox.Text, clavetextBox.Text);
 
             if (valido)
             {
