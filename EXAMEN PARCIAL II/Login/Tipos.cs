@@ -16,5 +16,18 @@ namespace Login
         {
             InitializeComponent();
         }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu formulario = new Menu();
+            Hide();
+            formulario.Show();
+        }
     }
 }

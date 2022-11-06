@@ -14,7 +14,6 @@ namespace Entidades
         public int Existencia { get; set; }
         public decimal Precio { get; set; }
         public DateTime Fecha { get; set; }
-
-
+        public string Registro { get; set; }
     }
 }
