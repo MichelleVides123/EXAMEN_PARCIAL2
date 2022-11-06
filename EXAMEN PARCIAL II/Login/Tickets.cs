@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Datos;
+using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,11 +35,43 @@ namespace Login
         }
 
 
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
+            if (preciotextBox.Text == String.Empty)
+            {
+                errorProvider1.SetError(preciotextBox, "Ingrese el precio");
+                preciotextBox.Focus();
+                return;
+            }
+            errorProvider1.Clear();
+
+            int datos, desc, total;
+
+            datos = (int)(Convert.ToInt32(preciotextBox.Text) * (0.12));
+            impuestotextBox.Text = Convert.ToString(datos);
+
+
+            desc = (int)(Convert.ToInt32(preciotextBox.Text) * (0.05));
+            descuentotextBox.Text = Convert.ToString(desc);
+
+            total = (Convert.ToInt32(preciotextBox.Text) - (datos + desc));
+            totaltextBox.Text = Convert.ToString(total);
+
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+
+            TicketDatos ticd = new TicketDatos();
+            Ticket ticket = new Ticket();
+
+            ticket = await ticd.GetPorTicket(Convert.ToInt32(usuariotextBox.Text));
+
+            if (ticket.idTicket > 0)
+            {
+                descripcionrespuestatextBox.Text = ticket.Usuario;
+                descripcionsolicitudtextBox.Text = ticket.Impuesto.ToString();
+            }
 
         }
     }

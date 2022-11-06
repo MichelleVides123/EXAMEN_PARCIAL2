@@ -32,14 +32,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.fechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.usuariotextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.preciotextBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.descripcionrespuestatextBox = new System.Windows.Forms.TextBox();
             this.descripcionsolicitudtextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,6 +46,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.clientetextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.preciotextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.totaltextBox = new System.Windows.Forms.TextBox();
             this.descuentotextBox = new System.Windows.Forms.TextBox();
@@ -56,10 +57,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -82,6 +85,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.fechadateTimePicker);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.usuariotextBox);
@@ -91,6 +95,16 @@
             this.groupBox1.Size = new System.Drawing.Size(678, 56);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(299, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "EJECUTAR";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // fechadateTimePicker
             // 
@@ -128,9 +142,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.preciotextBox);
-            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.descripcionrespuestatextBox);
             this.groupBox2.Controls.Add(this.descripcionsolicitudtextBox);
             this.groupBox2.Controls.Add(this.label7);
@@ -141,36 +152,10 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(8, 74);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(678, 148);
+            this.groupBox2.Size = new System.Drawing.Size(678, 94);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DATOS";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(565, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "ACEPTAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // preciotextBox
-            // 
-            this.preciotextBox.Location = new System.Drawing.Point(427, 106);
-            this.preciotextBox.Name = "preciotextBox";
-            this.preciotextBox.Size = new System.Drawing.Size(100, 23);
-            this.preciotextBox.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(377, 106);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 15);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Precio:";
             // 
             // descripcionrespuestatextBox
             // 
@@ -235,6 +220,32 @@
             this.label4.Size = new System.Drawing.Size(47, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Cliente:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(564, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "ACEPTAR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // preciotextBox
+            // 
+            this.preciotextBox.Location = new System.Drawing.Point(426, 22);
+            this.preciotextBox.Name = "preciotextBox";
+            this.preciotextBox.Size = new System.Drawing.Size(100, 23);
+            this.preciotextBox.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(376, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 15);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Precio:";
             // 
             // groupBox3
             // 
@@ -303,11 +314,24 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.preciotextBox);
+            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Location = new System.Drawing.Point(9, 173);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(671, 55);
+            this.groupBox4.TabIndex = 10;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ingresar precio";
+            // 
             // Tickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 333);
+            this.ClientSize = new System.Drawing.Size(686, 334);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -322,6 +346,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,5 +382,7 @@
         private Label label9;
         private Button button2;
         private ErrorProvider errorProvider1;
+        private Button button3;
+        private GroupBox groupBox4;
     }
 }
