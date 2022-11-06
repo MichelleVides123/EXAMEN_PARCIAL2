@@ -28,5 +28,10 @@ namespace Login
             Hide();
             formulario.Show();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.usuariotextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.preciotextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.descripcionrespuestatextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -142,6 +142,15 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DATOS";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(565, 106);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "ACEPTAR";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // preciotextBox
             // 
@@ -236,6 +245,7 @@
             this.groupBox3.Size = new System.Drawing.Size(676, 54);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // totaltextBox
             // 
@@ -284,15 +294,6 @@
             this.label9.Size = new System.Drawing.Size(60, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "Impuesto:";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(565, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "ACEPTAR";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // Tickets
             // 

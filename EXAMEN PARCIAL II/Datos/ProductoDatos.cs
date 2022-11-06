@@ -44,7 +44,7 @@ namespace Datos
             bool inserto = false;
             try
             {
-                string sql = "INSERT INTO producto VALUES (@Codigo, @Descripcion, @Existencia, @Precio, @Fecha, @Registro)";
+                string sql = "INSERT INTO producto VALUES (@Codigo, @Descripcion, @Existencia, @Precio, @Fecha, @Registro, @Usuario)";
 
                 using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {
@@ -58,6 +58,7 @@ namespace Datos
                         comando.Parameters.Add("@Precio", MySqlDbType.Decimal).Value = producto.Precio;
                         comando.Parameters.Add("@Fecha", MySqlDbType.DateTime).Value = producto.Fecha;
                         comando.Parameters.Add("@Registro", MySqlDbType.VarChar, 50).Value = producto.Registro;
+                        comando.Parameters.Add("@Usuario", MySqlDbType.VarChar, 50).Value = producto.Usuario;
 
                         await comando.ExecuteNonQueryAsync();
                         inserto = true;
@@ -76,7 +77,7 @@ namespace Datos
             bool actualizo = false;
             try
             {
-                string sql = "UPDATE producto SET @Descripcion, @Existencia, @Precio, @Fecha, @Registro WHERE Codigo=@Codigo;";
+                string sql = "UPDATE producto SET @Descripcion, @Existencia, @Precio, @Fecha, @Registro, @Usuario WHERE Codigo=@Codigo;";
 
                 using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {
@@ -90,6 +91,7 @@ namespace Datos
                         comando.Parameters.Add("@Precio", MySqlDbType.Decimal).Value = producto.Precio;
                         comando.Parameters.Add("@Fecha", MySqlDbType.DateTime).Value = producto.Fecha;
                         comando.Parameters.Add("@Registro", MySqlDbType.VarChar, 50).Value = producto.Registro;
+                        comando.Parameters.Add("@Usuario", MySqlDbType.VarChar, 50).Value = producto.Usuario;
 
                         await comando.ExecuteNonQueryAsync();
                         actualizo = true;
