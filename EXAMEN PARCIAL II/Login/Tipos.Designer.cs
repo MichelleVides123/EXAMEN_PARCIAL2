@@ -39,21 +39,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.UStextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.preciotextBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.totaltextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.UStextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,6 +144,22 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
+            // UStextBox
+            // 
+            this.UStextBox.Location = new System.Drawing.Point(239, 113);
+            this.UStextBox.Name = "UStextBox";
+            this.UStextBox.Size = new System.Drawing.Size(197, 23);
+            this.UStextBox.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(163, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 15);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Usuario:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label5);
@@ -177,7 +191,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(391, 32);
+            this.button2.Location = new System.Drawing.Point(387, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -189,28 +203,19 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(605, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(72, 35);
-            this.dataGridView1.TabIndex = 12;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.totaltextBox);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(12, 304);
+            this.groupBox3.Location = new System.Drawing.Point(66, 304);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(524, 60);
+            this.groupBox3.Size = new System.Drawing.Size(420, 54);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             // 
             // totaltextBox
             // 
-            this.totaltextBox.Location = new System.Drawing.Point(237, 27);
+            this.totaltextBox.Location = new System.Drawing.Point(218, 16);
             this.totaltextBox.Name = "totaltextBox";
             this.totaltextBox.Size = new System.Drawing.Size(100, 23);
             this.totaltextBox.TabIndex = 1;
@@ -218,35 +223,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(106, 30);
+            this.label6.Location = new System.Drawing.Point(87, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total del Precio:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(163, 117);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 15);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Usuario:";
-            // 
-            // UStextBox
-            // 
-            this.UStextBox.Location = new System.Drawing.Point(239, 113);
-            this.UStextBox.Name = "UStextBox";
-            this.UStextBox.Size = new System.Drawing.Size(197, 23);
-            this.UStextBox.TabIndex = 7;
-            // 
             // Tipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 448);
+            this.ClientSize = new System.Drawing.Size(539, 365);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -260,7 +248,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -285,7 +272,6 @@
         private Label label5;
         private TextBox preciotextBox;
         private ErrorProvider errorProvider1;
-        private DataGridView dataGridView1;
         private GroupBox groupBox3;
         private TextBox totaltextBox;
         private Label label6;
