@@ -31,5 +31,10 @@ namespace Login
             Hide();
             tickets.Show();
         }
+
+        private void sALIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

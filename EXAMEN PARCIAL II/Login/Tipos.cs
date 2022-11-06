@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Datos;
+using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +19,14 @@ namespace Login
             InitializeComponent();
         }
 
+        ProductoDatos proDatos = new ProductoDatos();
+        Producto producto = new Producto();
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Tipos_Load(object sender, EventArgs e)
         {
 
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -29,5 +34,11 @@ namespace Login
             Hide();
             formulario.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

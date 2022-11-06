@@ -32,6 +32,7 @@
             this.tIPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tICKETSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aRCHIVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sALIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,9 +64,18 @@
             // 
             // aRCHIVOToolStripMenuItem
             // 
+            this.aRCHIVOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sALIRToolStripMenuItem});
             this.aRCHIVOToolStripMenuItem.Name = "aRCHIVOToolStripMenuItem";
             this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.aRCHIVOToolStripMenuItem.Text = "ARCHIVO";
+            // 
+            // sALIRToolStripMenuItem
+            // 
+            this.sALIRToolStripMenuItem.Name = "sALIRToolStripMenuItem";
+            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sALIRToolStripMenuItem.Text = "SALIR";
+            this.sALIRToolStripMenuItem.Click += new System.EventHandler(this.sALIRToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -89,5 +99,6 @@
         private ToolStripMenuItem tIPOSToolStripMenuItem;
         private ToolStripMenuItem tICKETSToolStripMenuItem;
         private ToolStripMenuItem aRCHIVOToolStripMenuItem;
+        private ToolStripMenuItem sALIRToolStripMenuItem;
     }
 }
