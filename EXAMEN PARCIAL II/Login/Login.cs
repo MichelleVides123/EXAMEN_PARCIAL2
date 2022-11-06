@@ -11,11 +11,7 @@ namespace Login
 
         private async void aceptarbutton_Click(object sender, EventArgs e)
         {
-            Menu formulario = new Menu();
-            Hide();
-            formulario.Show();
-
-            /*
+            
             if (codigousuariotextBox.Text == String.Empty)
             {
                 errorProvider1.SetError(codigousuariotextBox, "Ingrese un codigo de usuario");
@@ -44,7 +40,7 @@ namespace Login
             {
                 MessageBox.Show("Datos incorrectos", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            */
+            
 
         }
 
